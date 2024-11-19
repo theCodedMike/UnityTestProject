@@ -357,6 +357,7 @@
 "Assets/Scripts/CameraTest.cs"
 "Assets/Scripts/CircleFormation.cs"
 "Assets/Scripts/Clock.cs"
+"Assets/Scripts/EngineControl.cs"
 "Assets/Scripts/ExcavatorController.cs"
 "Assets/Scripts/Explosion.cs"
 "Assets/Scripts/FireProjectile.cs"
