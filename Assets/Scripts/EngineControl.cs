@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class EngineControl : MonoBehaviour
 {
-    [Header("摄像头移动速度")]
-    public float rotateSpeed = 0.5f;
     [Header("层过滤标志")]
     public LayerMask layerMask;
     public Transform left4;
@@ -17,7 +15,6 @@ public class EngineControl : MonoBehaviour
     public Transform right4;
 
     private Camera _mainCamera;
-    private Vector3 _localEulerAnglesOfMainCamera;
     private Transform _target; // 鼠标点击的物体
     private float _zValue;
     
@@ -25,18 +22,12 @@ public class EngineControl : MonoBehaviour
     void Start()
     {
         _mainCamera = Camera.main;
-        _localEulerAnglesOfMainCamera = transform.localEulerAngles;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _localEulerAnglesOfMainCamera.y += Input.GetAxis("Mouse X") * rotateSpeed;
-        _localEulerAnglesOfMainCamera.y = Mathf.Clamp(_localEulerAnglesOfMainCamera.y, -60f, 60f);
-        _localEulerAnglesOfMainCamera.x -= Input.GetAxis("Mouse Y");
-        _localEulerAnglesOfMainCamera.x = Mathf.Clamp(_localEulerAnglesOfMainCamera.x, -20f, 15f);
-        transform.localEulerAngles = _localEulerAnglesOfMainCamera;
-
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             for (int i = 0; i < 80; i++)
@@ -57,7 +48,6 @@ public class EngineControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            print(Input.mousePosition);
             Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, 100, layerMask))
             {
