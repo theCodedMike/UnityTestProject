@@ -57,6 +57,7 @@
     <Compile Include="Assets\Scripts\EngineControl.cs" />
     <Compile Include="Assets\Scripts\ViewpointTest.cs" />
     <Compile Include="Assets\Scripts\RigidbodyTest.cs" />
+    <Compile Include="Assets\Scripts\ShootBox.cs" />
     <Compile Include="Assets\Scripts\CharacterControlTest.cs" />
     <Compile Include="Assets\Scripts\PhysicsTest.cs" />
     <Compile Include="Assets\Scripts\InputTest.cs" />
@@ -65,6 +66,8 @@
     <Compile Include="Assets\Scripts\ExcavatorController.cs" />
     <Compile Include="Assets\Scripts\GizmosTest.cs" />
     <None Include="Assets\Fonts\LICENSE.txt" />
+    <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
+    <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Install\UnityEditor\2022.3.40f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -757,6 +760,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{70a30a79-6ec2-b2d3-69eb-1c32428119c1}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{015b79c9-659e-7ace-b718-077254b619df}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
+      <Project>{1fa29e2e-e25f-da13-5a9f-ac80208b110f}</Project>
+      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
