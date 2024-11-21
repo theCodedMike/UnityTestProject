@@ -56,6 +56,9 @@
     <Compile Include="Assets\Scripts\CircleFormation.cs" />
     <Compile Include="Assets\Scripts\EngineControl.cs" />
     <Compile Include="Assets\Scripts\ViewpointTest.cs" />
+    <Compile Include="Assets\Scripts\RigidbodyTest.cs" />
+    <Compile Include="Assets\Scripts\CharacterControlTest.cs" />
+    <Compile Include="Assets\Scripts\PhysicsTest.cs" />
     <Compile Include="Assets\Scripts\InputTest.cs" />
     <Compile Include="Assets\Scripts\Clock.cs" />
     <Compile Include="Assets\Scripts\FireProjectile.cs" />
