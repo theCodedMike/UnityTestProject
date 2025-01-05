@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ShootBox.unity
+- path: Assets/Scenes/ViewpointScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

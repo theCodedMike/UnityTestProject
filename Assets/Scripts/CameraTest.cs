@@ -33,7 +33,8 @@ public class CameraTest : MonoBehaviour
             Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                hit.transform.GetComponent<MeshRenderer>().material.color = Color.green;
+                print($"Hit something: {hit.transform.name}");
+                hit.transform.GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
             }
         }
     }

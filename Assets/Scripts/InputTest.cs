@@ -22,8 +22,8 @@ public class InputTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //GetAxis();
-        GetButton();
+        GetAxis();
+        //GetButton();
     }
 
     // 该系列方法的返回值在[-1,1]之间
@@ -32,7 +32,7 @@ public class InputTest : MonoBehaviour
         // 控制方块的前后左右移动
         cube.Translate(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * (Time.deltaTime * moveSpeed));
         
-        // 控制方块视野随着鼠标左右移动而左右移动(本质上是方块沿y周旋转)
+        // 控制方块视野随着鼠标左右移动而左右移动(本质上是方块沿y轴旋转)
         _localEulerAnglesOfCube.y += Input.GetAxis("Mouse X");
         cube.localEulerAngles = _localEulerAnglesOfCube * rotateSpeed;
 
