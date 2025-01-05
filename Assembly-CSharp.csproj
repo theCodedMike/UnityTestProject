@@ -46,23 +46,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\CheckObject.cs" />
+    <Compile Include="Assets\Scripts\GameObjectPool.cs" />
     <Compile Include="Assets\Scripts\CameraTest.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\EngineMainCamera.cs" />
     <Compile Include="Assets\Scripts\ResourcesTest.cs" />
     <Compile Include="Assets\Scripts\WreckOnCollision.cs" />
     <Compile Include="Assets\Scripts\BuildingWall.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\TurretControl.cs" />
     <Compile Include="Assets\Scripts\CircleFormation.cs" />
     <Compile Include="Assets\Scripts\EngineControl.cs" />
     <Compile Include="Assets\Scripts\ViewpointTest.cs" />
     <Compile Include="Assets\Scripts\RigidbodyTest.cs" />
     <Compile Include="Assets\Scripts\ShootBox.cs" />
+    <Compile Include="Assets\Scripts\Star.cs" />
     <Compile Include="Assets\Scripts\CharacterControlTest.cs" />
     <Compile Include="Assets\Scripts\PhysicsTest.cs" />
     <Compile Include="Assets\Scripts\InputTest.cs" />
     <Compile Include="Assets\Scripts\Clock.cs" />
     <Compile Include="Assets\Scripts\FireProjectile.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\ExcavatorController.cs" />
     <Compile Include="Assets\Scripts\GizmosTest.cs" />
     <None Include="Assets\Fonts\LICENSE.txt" />

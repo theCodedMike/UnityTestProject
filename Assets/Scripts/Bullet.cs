@@ -24,6 +24,6 @@ public class Bullet : MonoBehaviour
 
     private void Disable()
     {
-        ObjectPool.GetInstance().PutObject("Bullet", gameObject);
+        GameObjectPool.GetInstance().PutObject("Bullet", gameObject);
     }
 }

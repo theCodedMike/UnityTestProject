@@ -37,7 +37,7 @@ public class ShootBox : MonoBehaviour
                 return;
             
             Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
-            GameObject clone = ObjectPool.GetInstance().GetObject("bullet", redBall, ray.GetPoint(2f), Quaternion.identity);
+            GameObject clone = GameObjectPool.GetInstance().GetObject("bullet", redBall, ray.GetPoint(2f), Quaternion.identity);
 
             
             if (clone.TryGetComponent(out Rigidbody rb))

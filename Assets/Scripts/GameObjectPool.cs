@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool
+public class GameObjectPool
 {
-    private static ObjectPool _instance;
+    private static GameObjectPool _instance;
     private static readonly Object Lock = new();
     private Dictionary<string, Queue<GameObject>> _pool;
     
-    public static ObjectPool GetInstance()
+    public static GameObjectPool GetInstance()
     {
         if (_instance == null)
         {
@@ -15,7 +15,7 @@ public class ObjectPool
             {
                 if(_instance == null)
                 {
-                    _instance = new ObjectPool();
+                    _instance = new GameObjectPool();
                 }
             }
         }
@@ -23,7 +23,7 @@ public class ObjectPool
         return _instance;
     }
 
-    private ObjectPool()
+    private GameObjectPool()
     {
         _pool = new Dictionary<string, Queue<GameObject>>();
     }
